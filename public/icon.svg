@@ -1,0 +1,233 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Royal Gradient -->
+    <radialGradient id="bgGradient" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#142B5C"/>
+      <stop offset="55%" stop-color="#0B1B3D"/>
+      <stop offset="100%" stop-color="#040A18"/>
+    </radialGradient>
+
+    <!-- Master Gold Metallic Gradient -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF3C4"/>
+      <stop offset="25%" stop-color="#F5E6AB"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="75%" stop-color="#AA820A"/>
+      <stop offset="100%" stop-color="#F5E6AB"/>
+    </linearGradient>
+
+    <!-- Bright Gold Highlight -->
+    <linearGradient id="goldBright" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="30%" stop-color="#FFF3C4"/>
+      <stop offset="70%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#997300"/>
+    </linearGradient>
+
+    <!-- Light Beams Soft Radial -->
+    <radialGradient id="beaconGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFBEA" stop-opacity="1"/>
+      <stop offset="35%" stop-color="#FDE047" stop-opacity="0.85"/>
+      <stop offset="70%" stop-color="#EAB308" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#CA8A04" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Left & Right Wide Light Beams -->
+    <linearGradient id="beamLeft" x1="100%" y1="50%" x2="0%" y2="50%">
+      <stop offset="0%" stop-color="#FEF08A" stop-opacity="0.75"/>
+      <stop offset="60%" stop-color="#FDE047" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#EAB308" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="beamRight" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#FEF08A" stop-opacity="0.75"/>
+      <stop offset="60%" stop-color="#FDE047" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#EAB308" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Papyrus & Book Gradients -->
+    <linearGradient id="papyrusGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E2C988"/>
+      <stop offset="20%" stop-color="#F5E6AB"/>
+      <stop offset="50%" stop-color="#FDFBF7"/>
+      <stop offset="80%" stop-color="#F5E6AB"/>
+      <stop offset="100%" stop-color="#D6B86C"/>
+    </linearGradient>
+
+    <linearGradient id="bookPage" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EBE3D0"/>
+      <stop offset="48%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#D8CCB2"/>
+      <stop offset="52%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#EBE3D0"/>
+    </linearGradient>
+
+    <!-- Subtle Drop Shadow Filter -->
+    <filter id="goldDropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- 1. SQUIRCLE BASE (Rounded Square Body) -->
+  <rect x="12" y="12" width="488" height="488" rx="108" ry="108" fill="url(#bgGradient)"/>
+
+  <!-- 2. DOUBLE DECORATIVE GOLD FRAME -->
+  <!-- Outer Primary Gold Frame -->
+  <rect x="16" y="16" width="480" height="480" rx="104" ry="104" fill="none" stroke="url(#goldGradient)" stroke-width="7"/>
+  <!-- Inner Decorative Dashed Accent Frame -->
+  <rect x="28" y="28" width="456" height="456" rx="92" ry="92" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-dasharray="8 6" opacity="0.65"/>
+  <!-- Inner Thin Golden Pin-Stripe -->
+  <rect x="36" y="36" width="440" height="440" rx="84" ry="84" fill="none" stroke="#F5E6AB" stroke-width="1" opacity="0.3"/>
+
+  <!-- Corner Royal Dots -->
+  <circle cx="56" cy="56" r="4" fill="url(#goldGradient)"/>
+  <circle cx="456" cy="56" r="4" fill="url(#goldGradient)"/>
+  <circle cx="56" cy="456" r="4" fill="url(#goldGradient)"/>
+  <circle cx="456" cy="456" r="4" fill="url(#goldGradient)"/>
+
+  <!-- 3. SUBTLE BACKGROUND NAUTICAL COMPASS ROSE -->
+  <g opacity="0.18" transform="translate(256, 210)">
+    <!-- Compass Circles -->
+    <circle cx="0" cy="0" r="145" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <circle cx="0" cy="0" r="128" fill="none" stroke="#D4AF37" stroke-width="1"/>
+    <circle cx="0" cy="0" r="85" fill="none" stroke="#D4AF37" stroke-width="1"/>
+
+    <!-- Compass Cardinal 8-Point Star -->
+    <!-- North -->
+    <polygon points="0,-140 10,-35 0,-15" fill="#D4AF37"/>
+    <polygon points="0,-140 -10,-35 0,-15" fill="#F5E6AB"/>
+    <!-- South -->
+    <polygon points="0,140 -10,35 0,15" fill="#D4AF37"/>
+    <polygon points="0,140 10,35 0,15" fill="#F5E6AB"/>
+    <!-- East -->
+    <polygon points="140,0 35,10 15,0" fill="#D4AF37"/>
+    <polygon points="140,0 35,-10 15,0" fill="#F5E6AB"/>
+    <!-- West -->
+    <polygon points="-140,0 -35,-10 -15,0" fill="#D4AF37"/>
+    <polygon points="-140,0 -35,10 -15,0" fill="#F5E6AB"/>
+
+    <!-- Diagonal Small Points -->
+    <polygon points="90,-90 28,-10 12,-12" fill="#D4AF37" opacity="0.8"/>
+    <polygon points="90,-90 10,-28 12,-12" fill="#F5E6AB" opacity="0.8"/>
+    <polygon points="-90,-90 -10,-28 -12,-12" fill="#D4AF37" opacity="0.8"/>
+    <polygon points="-90,-90 -28,-10 -12,-12" fill="#F5E6AB" opacity="0.8"/>
+    <polygon points="90,90 10,28 12,12" fill="#D4AF37" opacity="0.8"/>
+    <polygon points="90,90 28,10 12,12" fill="#F5E6AB" opacity="0.8"/>
+    <polygon points="-90,90 -28,10 -12,12" fill="#D4AF37" opacity="0.8"/>
+    <polygon points="-90,90 -10,28 -12,12" fill="#F5E6AB" opacity="0.8"/>
+  </g>
+
+  <!-- 4. RADIANT LIGHT BEAMS FROM BEACON -->
+  <!-- Left Broad Projection Beam -->
+  <polygon points="256,132 40,65 30,175" fill="url(#beamLeft)" opacity="0.55"/>
+  <!-- Right Broad Projection Beam -->
+  <polygon points="256,132 472,65 482,175" fill="url(#beamRight)" opacity="0.55"/>
+
+  <!-- Upward & Diagonal Radiant Beams -->
+  <g stroke="url(#goldGradient)" stroke-linecap="round" opacity="0.85">
+    <line x1="256" y1="88" x2="256" y2="46" stroke-width="4"/>
+    <line x1="290" y1="98" x2="335" y2="60" stroke-width="3.5"/>
+    <line x1="222" y1="98" x2="177" y2="60" stroke-width="3.5"/>
+    <line x1="316" y1="120" x2="378" y2="92" stroke-width="3"/>
+    <line x1="196" y1="120" x2="134" y2="92" stroke-width="3"/>
+    <line x1="328" y1="145" x2="395" y2="135" stroke-width="2.5"/>
+    <line x1="184" y1="145" x2="117" y2="135" stroke-width="2.5"/>
+  </g>
+
+  <!-- Central Beacon Glowing Halo -->
+  <circle cx="256" cy="132" r="34" fill="url(#beaconGlow)"/>
+  <circle cx="256" cy="132" r="14" fill="#FFFFFF" opacity="0.95"/>
+
+  <!-- 5. MAJESTIC GOLDEN LIGHTHOUSE TOWER -->
+  <g filter="url(#goldDropShadow)">
+    <!-- Top Crown Spire & Finial -->
+    <path d="M256,64 L260,84 L252,84 Z" fill="url(#goldBright)"/>
+    <circle cx="256" cy="62" r="4" fill="#FFFBEA"/>
+
+    <!-- Cupola Dome -->
+    <path d="M242,98 C242,84 270,84 270,98 Z" fill="url(#goldGradient)" stroke="#8A6603" stroke-width="1"/>
+    <rect x="238" y="98" width="36" height="5" rx="1.5" fill="url(#goldBright)"/>
+
+    <!-- Lantern Room (Chamber of Light) -->
+    <rect x="241" y="103" width="30" height="34" fill="#FEF08A" stroke="#AA820A" stroke-width="1.5"/>
+    <!-- Glass Mullions & Glowing Core -->
+    <line x1="251" y1="103" x2="251" y2="137" stroke="#AA820A" stroke-width="1.5"/>
+    <line x1="261" y1="103" x2="261" y2="137" stroke="#AA820A" stroke-width="1.5"/>
+    <line x1="241" y1="120" x2="271" y2="120" stroke="#AA820A" stroke-width="1.2"/>
+    <circle cx="256" cy="120" r="7" fill="#FFFFFF"/>
+
+    <!-- Gallery / Observation Balcony -->
+    <rect x="231" y="137" width="50" height="7" rx="2" fill="url(#goldBright)"/>
+    <!-- Balcony Railing -->
+    <line x1="233" y1="134" x2="279" y2="134" stroke="url(#goldGradient)" stroke-width="1.5"/>
+    <line x1="236" y1="134" x2="236" y2="137" stroke="url(#goldGradient)" stroke-width="1.2"/>
+    <line x1="246" y1="134" x2="246" y2="137" stroke="url(#goldGradient)" stroke-width="1.2"/>
+    <line x1="256" y1="134" x2="256" y2="137" stroke="url(#goldGradient)" stroke-width="1.2"/>
+    <line x1="266" y1="134" x2="266" y2="137" stroke="url(#goldGradient)" stroke-width="1.2"/>
+    <line x1="276" y1="134" x2="276" y2="137" stroke="url(#goldGradient)" stroke-width="1.2"/>
+
+    <!-- Main Tapered Stone Tower Shaft -->
+    <!-- Tower Body -->
+    <polygon points="244,144 268,144 278,280 234,280" fill="url(#goldGradient)" stroke="#8A6603" stroke-width="1.5"/>
+
+    <!-- Tower Architectural Bands & Masonry Detail -->
+    <line x1="242" y1="172" x2="270" y2="172" stroke="#8A6603" stroke-width="1.8"/>
+    <line x1="239" y1="210" x2="273" y2="210" stroke="#8A6603" stroke-width="1.8"/>
+    <line x1="236" y1="248" x2="276" y2="248" stroke="#8A6603" stroke-width="1.8"/>
+
+    <!-- Tower Windows (Arch Windows with Light) -->
+    <path d="M253,190 Q256,184 259,190 L259,198 L253,198 Z" fill="#0B1B3D" stroke="#AA820A" stroke-width="1"/>
+    <path d="M252,228 Q256,222 260,228 L260,237 L252,237 Z" fill="#0B1B3D" stroke="#AA820A" stroke-width="1"/>
+    <path d="M251,262 Q256,256 261,262 L261,272 L251,272 Z" fill="#0B1B3D" stroke="#AA820A" stroke-width="1"/>
+
+    <!-- Tower Cornice Base -->
+    <polygon points="230,280 282,280 286,294 226,294" fill="url(#goldBright)" stroke="#8A6603" stroke-width="1.5"/>
+    <rect x="222" y="294" width="68" height="12" rx="2" fill="url(#goldGradient)" stroke="#8A6603" stroke-width="1.5"/>
+  </g>
+
+  <!-- 6. ANTIQUE PAPYRUS SCROLL & OPEN HISTORY BOOK -->
+  <g filter="url(#goldDropShadow)">
+    <!-- Antique Papyrus Base Scroll Layer -->
+    <path d="M96,358 C150,344 210,358 256,366 C302,358 362,344 416,358 C426,360 430,372 422,380 C370,392 310,380 256,374 C202,380 142,392 90,380 C82,372 86,360 96,358 Z" fill="url(#papyrusGrad)" stroke="#AA820A" stroke-width="2"/>
+    <!-- Scroll Rolled Ends -->
+    <ellipse cx="94" cy="369" rx="8" ry="11" fill="#E2C988" stroke="#AA820A" stroke-width="1.5"/>
+    <ellipse cx="418" cy="369" rx="8" ry="11" fill="#E2C988" stroke="#AA820A" stroke-width="1.5"/>
+
+    <!-- Open History Book - Hardcover Rim -->
+    <path d="M120,344 Q256,312 256,324 Q256,312 392,344 L388,366 Q256,334 256,346 Q256,334 124,366 Z" fill="#7C2D12" stroke="url(#goldGradient)" stroke-width="2"/>
+
+    <!-- Open Book Pages (Left & Right Wings) -->
+    <!-- Left Page Wing -->
+    <path d="M124,342 Q190,326 256,338 L256,360 Q190,348 124,364 Z" fill="url(#bookPage)" stroke="#AA820A" stroke-width="1"/>
+    <!-- Right Page Wing -->
+    <path d="M388,342 Q322,326 256,338 L256,360 Q322,348 388,364 Z" fill="url(#bookPage)" stroke="#AA820A" stroke-width="1"/>
+
+    <!-- Book Page Lines (Representing Historic Wisdom & Texts) -->
+    <g stroke="#94A3B8" stroke-width="1.2" opacity="0.75" stroke-linecap="round">
+      <line x1="148" y1="344" x2="236" y2="340"/>
+      <line x1="144" y1="350" x2="234" y2="346"/>
+      <line x1="140" y1="356" x2="230" y2="352"/>
+
+      <line x1="276" y1="340" x2="364" y2="344"/>
+      <line x1="278" y1="346" x2="368" y2="350"/>
+      <line x1="282" y1="352" x2="372" y2="356"/>
+    </g>
+
+    <!-- Golden Bookmark Ribbon Falling Down -->
+    <polygon points="253,338 259,338 261,378 256,373 251,378" fill="url(#goldGradient)" stroke="#8A6603" stroke-width="0.8"/>
+  </g>
+
+  <!-- 7. OFFICIAL ROYAL TEXT: «تاريخ المنارة» -->
+  <!-- Text Underglow / Shadow Plate -->
+  <text x="256" y="446" text-anchor="middle" fill="#040A18" font-size="44" font-weight="900" font-family="'Cairo', 'Tajawal', sans-serif" letter-spacing="1.5" opacity="0.9">
+    تاريخ المنارة
+  </text>
+  <!-- Foreground Radiant Gold Text -->
+  <text x="256" y="444" text-anchor="middle" fill="url(#goldGradient)" stroke="#5A4302" stroke-width="1.2" font-size="44" font-weight="900" font-family="'Cairo', 'Tajawal', sans-serif" letter-spacing="1.5" filter="url(#goldDropShadow)">
+    تاريخ المنارة
+  </text>
+
+  <!-- Bottom Mini Gold Star / Target Accent -->
+  <circle cx="256" cy="470" r="3" fill="url(#goldBright)"/>
+  <line x1="180" y1="470" x2="242" y2="470" stroke="url(#goldGradient)" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+  <line x1="270" y1="470" x2="332" y2="470" stroke="url(#goldGradient)" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+</svg>

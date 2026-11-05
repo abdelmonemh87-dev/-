@@ -1,0 +1,22 @@
+{
+  "id": "/",
+  "name": "تاريخ المنارة — أكاديمية المنارة التعليمية",
+  "short_name": "تاريخ المنارة",
+  "description": "المنصة الأكاديمية والراوي الوثائقي لتاريخ المرحلة الثانوية والبكالوريا المصرية واسكريبتات بودكاست حواديت منسية — أكاديمية المنارة التعليمية",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#070E1F",
+  "theme_color": "#0B1B3D",
+  "dir": "rtl",
+  "lang": "ar",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

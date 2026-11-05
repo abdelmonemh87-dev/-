@@ -1,0 +1,6 @@
+{
+  "name": "المنارة في التاريخ | أكاديمية المنارة التعليمية",
+  "description": "المنصة الأكاديمية والراوي الوثائقي لتاريخ المرحلة الثانوية والبكالوريا المصرية واسكريبتات بودكاست حواديت منسية",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
